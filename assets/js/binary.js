@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"2.0.0","target":"arcade","targetVersion":"1.12.30","repo":"jurakii/ball-jump"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.30/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"2.0.1","target":"arcade","targetVersion":"1.12.30","repo":"jurakii/ball-jump"}
 // total=1958088 new=6.24% cached=88.79% other=4.97%
 (function (ectx) {
 'use strict';
@@ -575,7 +575,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P26162(s) {
+function _main___P25703(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1207,13 +1207,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P26162.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P26162.continuations = [  ]
+_main___P25703.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P25703.continuations = [  ]
 
-function _main___P26162_mk(s) {
+function _main___P25703_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P26162, depth: s.depth + 1,
+        parent: s, fn: _main___P25703, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -66823,5 +66823,5 @@ const sprites_BaseSpriteSayRenderer__C2259_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___4349","Platform___4331","Title___4332","Boost___4333","yVel___4344","platformY___4343","Platforms___4342","currentPos___4341","platformX___4340","Ball___4339","cameraY___4338","cameraSpeed___4337","lastX___4336","gameStart___4346","startButton___4345","cameraX___4335","boost___4334","title___4347"])
 
-return _main___P26162
+return _main___P25703
 })
