@@ -19,6 +19,9 @@ let Ball = sprites.create(img`
     . c b b b c . 
     . . c c c . . 
     `, SpriteKind.Player)
+controller.moveSprite(Ball, 50, 0)
+let platformY = 110
+let platformX = 0
 let Platforms = sprites.create(img`
     . . c c c c c c c c c c c . . 
     . c 1 1 1 1 1 1 1 1 1 1 1 c . 
@@ -26,10 +29,27 @@ let Platforms = sprites.create(img`
     . c b b b b b b b b b b b c . 
     . . c c c c c c c c c c c . . 
     `, SpriteKind.Platform)
-Platforms.setPosition(80, 110)
-controller.moveSprite(Ball, 50, 0)
+Platforms.setPosition(80, platformY)
+for (let index = 0; index < 2; index++) {
+    Platforms = sprites.create(img`
+        . . c c c c c c c c c c c . . 
+        . c 1 1 1 1 1 1 1 1 1 1 1 c . 
+        c d d d d d d d d d d d d d c 
+        . c b b b b b b b b b b b c . 
+        . . c c c c c c c c c c c . . 
+        `, SpriteKind.Platform)
+    platformY += -50
+    platformX = randint(10, 20)
+    if (randint(1, 2) == 1) {
+        Platforms.setPosition(Platforms.x + platformX, platformY)
+    } else {
+        Platforms.setPosition(Platforms.x - platformX, platformY)
+    }
+}
 forever(function () {
     Ball.setVelocity(0, yVel)
     yVel += 5
+})
+forever(function () {
     scene.cameraFollowSprite(Ball)
 })
