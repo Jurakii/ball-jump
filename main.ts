@@ -152,7 +152,7 @@ forever(function () {
         yVel += 5
         if (Ball.y > currentPos + 500) {
             game.gameOver(false)
-            game.setGameOverEffect(true, effects.melt)
+            game.setGameOverEffect(false, effects.melt)
         }
     }
 })
