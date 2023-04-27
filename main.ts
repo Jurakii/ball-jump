@@ -57,7 +57,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Platform, function (sprite, othe
         currentPos = platformY
         platformX = randint(10, 40)
         Platforms.setPosition(lastX, platformY)
-        if (randint(1, 15) == 1) {
+        if (randint(1, 20) == 1) {
             boost = sprites.create(assets.image`boost`, SpriteKind.Boost)
             music.play(music.createSoundEffect(WaveShape.Sine, 1, 798, 255, 0, 100, SoundExpressionEffect.Warble, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             if (randint(1, 2) == 1) {
