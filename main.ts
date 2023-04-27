@@ -35,28 +35,7 @@ let platformY = 0
 let Platforms: Sprite = null
 let yVel = 0
 let gameStart = 0
-gameStart = 0
-let title = sprites.create(img`
-    ..1111111111111111111111................
-    .1cccc111ccc11c11111c111................
-    .1c111c1c111c1c11111c1111...............
-    .1c111c1c111c1c11111c1111...............
-    .1cccc11ccccc1c11111c1111...............
-    .1c111c1c111c1c11111c1111...............
-    .1c111c1c111c1c11111c1111...............
-    .1cccc11c111c1cccc11cccc1...............
-    .111111111111111111111111111111111111...
-    .1cccc111ccc11c111c1c111c11cccc1ccccc1..
-    .1c111c1c111c1c111c1cc11c1c11111c11111..
-    .1c111c1c111c1c111c1c1c1c1c11111c11111..
-    .1cccc11c111c1c111c1c11cc1c11111ccccc1..
-    .1c111c1c111c1c111c1c111c1c11111c11111..
-    .1c111c1c111c1c111c1c111c1c11111c11111..
-    .1cccc111ccc111ccc11c111c11cccc1ccccc1..
-    ..11111111111111111111111111111111111...
-    `, SpriteKind.Player)
-title.setPosition(80, 60)
-title.setScale(2, ScaleAnchor.Middle)
+gameStart = 1
 scene.setBackgroundColor(12)
 effects.starField.startScreenEffect()
 forever(function () {
@@ -65,13 +44,12 @@ forever(function () {
         yVel += 5
         if (Ball.y > currentPos + 500) {
             game.gameOver(false)
+            game.setGameOverEffect(true, effects.melt)
         }
     }
 })
 forever(function () {
-    if (gameStart == 1) {
-    	
-    }
+	
 })
 forever(function () {
     if (gameStart == 1) {
@@ -110,7 +88,7 @@ forever(function () {
             `, SpriteKind.Platform)
         Platforms.setPosition(80, platformY)
         lastX = Platforms.x
-    } else if (controller.A.isPressed()) {
+    } else if (controller.A.isPressed() && gameStart == 0) {
         gameStart = 1
     }
 })
