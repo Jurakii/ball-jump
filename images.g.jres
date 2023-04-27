@@ -14,15 +14,20 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Platform"
     },
-    "h`Zx-7Pm0pT9iKXHRhW%": {
-        "data": "hwQPAAUAAAAADAAAwM0AABy9DAAcvQwAHL0MABy9DAAcvQwAHL0MABy9DAAcvQwAHL0MABy9DAAcvQwAwM0AAAAMAAA=",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "Platfor"
-    },
     "wXUU6f1=+D;a?rXd(1uJ": {
         "data": "hwQHAAcAAAAAzAwAwLvLANzduwzc3b0MHN29DMDRzQAAzAwA",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Ball"
+    },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage"
+    },
+    "h`Zx-7Pm0pT9iKXHRhW%": {
+        "data": "hwQHAAoAAAAAwAAAAAAAAAC8DAAAAAAAwNHMzAwAAAAc3d29ywAAAMDRzMwMAAAAALwMAAAAAAAAwAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "boost"
     },
     ",(~/eygnF|d:OR}BWxM?": {
         "namespace": "myImages",

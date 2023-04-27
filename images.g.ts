@@ -49,14 +49,6 @@ c d d d d d d d d d d d d d c
 . c b b b b b b b b b b b c . 
 . . c c c c c c c c c c c . . 
 `;
-            case "h`Zx-7Pm0pT9iKXHRhW%":
-            case "Platfor":return img`
-. . c c c c c c c c c c c . . 
-. c 1 1 1 1 1 1 1 1 1 1 1 c . 
-c d d d d d d d d d d d d d c 
-. c b b b b b b b b b b b c . 
-. . c c c c c c c c c c c . . 
-`;
             case "wXUU6f1=+D;a?rXd(1uJ":
             case "Ball":return img`
 . . c c c . . 
@@ -66,6 +58,38 @@ c b d d d d c
 c b b d d d c 
 . c b b b c . 
 . . c c c . . 
+`;
+            case "image1":
+            case "myImage":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "h`Zx-7Pm0pT9iKXHRhW%":
+            case "boost":return img`
+. . . c . . . 
+. . c 1 c . . 
+. c 1 d 1 c . 
+c b d d d b c 
+. c c d c c . 
+. . c d c . . 
+. . c d c . . 
+. . c b c . . 
+. . c b c . . 
+. . . c . . . 
 `;
         }
         return null;
