@@ -106,7 +106,7 @@ startButton = sprites.create(img`
     `, SpriteKind.Title)
 startButton.setScale(2, ScaleAnchor.Middle)
 startButton.setPosition(80, 100)
-title.setPosition(80, 60)
+title.setPosition(80, 45)
 title.setScale(2, ScaleAnchor.Middle)
 animation.runImageAnimation(
 startButton,
